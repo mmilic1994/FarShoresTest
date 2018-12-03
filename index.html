@@ -1,16 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FarShoresTest</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+    <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap/css/custom.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap/css/slider.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <img src="img/tyres_store.png" alt="tyres_store">
+        </div>
+    </header>
+    <main>
+        <section class="container bg-secondary p-2 searh_results">
+            <div class="row">
+                <div class="col d-flex p-4 align-items-center">
+                    <button type="button" class="btn btn-light">Revise Search</button>
+                </div>
+                <div class="col d-flex flex-column align-items-flex-start justify-content-center">
+                    <span>same/front/rear</span>
+                    <span><strong>225/65R17 All Seasons</strong></span>
+                </div>
+                <div class="col d-flex p-3 align-items-center tires_num">
+                    <h3>FOUND <strong>39</strong> TIRES</h3>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12 p-4">
+                    <h4>FILTER RESULTS</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-column p-2 align-items-center">
+                    <p>Price range</p>
+                    <div class="slidecontainer col-12">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                </div>
+                <div class="col d-flex flex-column p-2 align-items-center">
+                    <label for="brand">Brand</label>
+                    <select class="custom-select" name="brand" id="brand">
+                        <option class="dropdown-item" value="All">All</option>
+                        <option class="dropdown-item" value="Bridgestone">Bridgestone(7)</option>
+                        <option class="dropdown-item" value="Firestone">Firestone(5)</option>
+                        <option class="dropdown-item" value="Michelin">Michelin(4)</option>
+                    </select>
+                </div>
+                <div class="col d-flex flex-column p-2 align-items-center">
+                    <label for="brand">Speed rating</label>
+                    <select class="custom-select" name="brand" id="brand">
+                        <option class="dropdown-item" value="All">All</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row ">
+                <div class="col d-flex p-2 align-items-center">
+                    <h2>TIRE RECOMMENDATION</h2>
+                </div>
+                <div class="col d-flex p-4 ma-4 align-items-center">
+                    <label for="brand" class="col ma-1">Sort by</label>
+                    <select class="custom-select" name="brand" id="brand">
+                        <option class="dropdown-item" value="All">Best match</option>
+                        <option class="dropdown-item" value="Bridgestone">Brand:A-Z</option>
+                        <option class="dropdown-item" value="Firestone">Price: Low to</option>
+                        <option class="dropdown-item" value="Michelin">Price: High to</option>
+                    </select>
+                    <span class="col ma-1"><a href="#">1</a></span>
+                    <span class="col ma-1"><a href="#">2</a></span>
+                    <span class="col ma-1"><a href="#">3</a></span>
+                    <span class="col ma-1"><a href="#">Next</a></span>
+                </div>
+            </div>
+            </section>
+            <section class="tire_items p-4">
+                <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 p-2">
+                        <h4>TIRE NAME</h4> 
+                        <p>TIRE CATEGORY</p> 
+                    </div>
+                    <div class="col-xs-12 d-flex row-nowrap p-2">
+                        14 reviews &nbsp;   
+                        <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span> </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/potenza_tire.jpeg" height="200px" /> 
+                    </div>
+                <div class="col d-flex row-nowrap">
+                 <div class="row">
+                    <div class="col">
+                        <p>AVAILABILITY: <br> IN STOCK <br> AVAILABLE IN MIN 3 DAYS</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-left">PRICE: <br> $130.00 <br> per tire <br> Set of 4: $520.00</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-left">QUANTITY:
+                                <div class="col d-flex flex-column p-2 align-items-center">
+                                        <select class="custom-select" name="brand" id="brand">
+                                            <option class="dropdown-item" value="1">1</option>
+                                            <option class="dropdown-item" value="2">2</option>
+                                            <option class="dropdown-item" value="3">3</option>
+                                            <option class="dropdown-item" value="4">4</option>
+                                        </select>
+                                    </div>
+                    </div>
+                        </p>
+                 </div>
+                 <div class="col">
+                    <p class="text-left">SPECS: <br> Size: 225/65R17 <br> Load index: 102 <br>
+                     Part: 006240 <br> Speed Rating: T (110mph)
+                    </p>
+                 </div>    
+                 </div>    
+                </div>
+                <div class="row d-flex justify-content-center">
+                        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-6">
+                            <button type="button" class="btn btn-success">SELECT AND PROCEED TO
+                            APPOINTMENT SCHEDULING
+                            </button>  
+                        </div>  
+                     </div> 
+            </div>
+            </section>
+            <section class="tire_items p-4">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 p-2">
+                            <h4>TIRE NAME</h4> 
+                            <p>TIRE CATEGORY</p> 
+                        </div>
+                        <div class="col-xs-12 d-flex row-nowrap p-2">
+                            14 reviews &nbsp;   
+                            <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span> </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/potenza_tire.jpeg" height="200px" /> 
+                        </div>
+                    <div class="col d-flex row-nowrap">
+                     <div class="row">
+                        <div class="col">
+                            <p>AVAILABILITY: <br> IN STOCK <br> AVAILABLE IN MIN 3 DAYS</p>
+                        </div>
+                        <div class="col">
+                            <p class="text-left">PRICE: <br> $130.00 <br> per tire <br> Set of 4: $520.00</p>
+                        </div>
+                        <div class="col">
+                            <p class="text-left">QUANTITY:
+                                    <div class="col d-flex flex-column p-2 align-items-center">
+                                            <select class="custom-select" name="brand" id="brand">
+                                                <option class="dropdown-item" value="1">1</option>
+                                                <option class="dropdown-item" value="2">2</option>
+                                                <option class="dropdown-item" value="3">3</option>
+                                                <option class="dropdown-item" value="4">4</option>
+                                            </select>
+                                        </div>
+                        </div>
+                            </p>
+                     </div>
+                     <div class="col">
+                        <p class="text-left">SPECS: <br> Size: 225/65R17 <br> Load index: 102 <br>
+                         Part: 006240 <br> Speed Rating: T (110mph)
+                        </p>
+                     </div>    
+                     </div>    
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                            <div class="col-xs-6 col-sm-6 col-md-8 col-lg-6">
+                                <button type="button" class="btn btn-success">SELECT AND PROCEED TO
+                                APPOINTMENT SCHEDULING
+                                </button>  
+                            </div>  
+                         </div> 
+                </div>
+                </section>
+                <section class="tire_items p-4">
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 p-2">
+                                <h4>TIRE NAME</h4> 
+                                <p>TIRE CATEGORY</p> 
+                            </div>
+                            <div class="col-xs-12 d-flex row-nowrap p-2">
+                                14 reviews &nbsp;   
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span> </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="img/potenza_tire.jpeg" height="200px" /> 
+                            </div>
+                        <div class="col d-flex row-nowrap">
+                         <div class="row">
+                            <div class="col">
+                                <p>AVAILABILITY: <br> IN STOCK <br> AVAILABLE IN MIN 3 DAYS</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-left">PRICE: <br> $130.00 <br> per tire <br> Set of 4: $520.00</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-left">QUANTITY:
+                                        <div class="col d-flex flex-column p-2 align-items-center">
+                                                <select class="custom-select" name="brand" id="brand">
+                                                    <option class="dropdown-item" value="1">1</option>
+                                                    <option class="dropdown-item" value="2">2</option>
+                                                    <option class="dropdown-item" value="3">3</option>
+                                                    <option class="dropdown-item" value="4">4</option>
+                                                </select>
+                                            </div>
+                            </div>
+                                </p>
+                         </div>
+                         <div class="col">
+                            <p class="text-left">SPECS: <br> Size: 225/65R17 <br> Load index: 102 <br>
+                             Part: 006240 <br> Speed Rating: T (110mph)
+                            </p>
+                         </div>    
+                         </div>    
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                                <div class="col-xs-6 col-sm-6 col-md-8 col-lg-6">
+                                    <button type="button" class="btn btn-success">SELECT AND PROCEED TO
+                                    APPOINTMENT SCHEDULING
+                                    </button>  
+                                </div>  
+                             </div> 
+                    </div>
+                    </section>
+                
+                <div class="col mb-2">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-10 text-right">
+                            <div class="bg-success text-white">Total: $1560.00</div>
+                        </div>
+                    </div>
+                </div>
+            
+    </main>
+
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    <!-- <script src="bootstrap/js/main.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

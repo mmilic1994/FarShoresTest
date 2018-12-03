@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto';
+}
+
+.header {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.searh_results {
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+}
+.table {
+  background-color: white;
+}
+.tires_num {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.checked {
+  color: gold;
+}
+
+.tire_items {
+  background-color: #F2F2F2;
+  margin: 1rem;
+}
+
+
+
+
