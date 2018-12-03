@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto';
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .header {
@@ -28,6 +28,38 @@ body {
 .tire_items {
   background-color: #F2F2F2;
   margin: 1rem;
+}
+
+.buy_tire {
+  background-color: #f8eb0d;
+  color: #333;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.buy_tire:hover {
+  color: #f8eb0d;
+  background: #333;
+}
+
+.total_price {
+  background-color: #f8eb0d;
+  color: #333;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  border: none;
+  width: 20rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
